@@ -1,0 +1,55 @@
+.box {
+    background-color: #808080;
+    width: 150px;
+    height: 200px;
+    padding: 25px 17.5px;
+    position: relative;
+    left: -130px;
+    transition: left 600ms;
+}
+
+.box:hover {
+    left: 0px;
+   .box-item::before{
+    transform: rotate(405deg);
+   }
+   .box-text{
+    opacity: 0;
+   }
+}
+
+.box-items {
+
+}
+
+.box-item {
+    
+}
+
+.box-item::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffa502;
+    border: 1px solid black;
+    margin-right: 10px;
+    transition: transform 1000ms;
+}
+
+.box-link {
+    color: #f6f5f7;
+    transition: color 500ms;
+}
+
+.box-link:hover{
+    color: #ffa502;
+}
+
+.box-text {
+    position: absolute;
+    left: 110px;
+    bottom: 90px;
+    transform: rotate(90deg);
+    transition: opacity 600ms;
+}
