@@ -1,10 +1,10 @@
 .box {
     background-color: #808080;
-    width: 150px;
-    height: 200px;
-    padding: 25px 17.5px;
+    width: 500px;
+    height: 700px;
+    padding: 100px 80px;
     position: relative;
-    left: -130px;
+    left: -440px;
     transition: left 600ms;
 }
 
@@ -23,23 +23,25 @@
 }
 
 .box-item {
-    
+
 }
 
 .box-item::before {
     content: "";
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: #ffa502;
-    border: 1px solid black;
+    border: 3px solid black;
     margin-right: 10px;
+    margin-bottom: 10px;
     transition: transform 1000ms;
 }
 
 .box-link {
     color: #f6f5f7;
     transition: color 500ms;
+    font-size: 50px;
 }
 
 .box-link:hover{
@@ -47,9 +49,10 @@
 }
 
 .box-text {
-    position: absolute;
-    left: 110px;
-    bottom: 90px;
+    position: relative;
+    left: 220px;
+    bottom: 120px;
     transform: rotate(90deg);
     transition: opacity 600ms;
+    font-size: 50px;
 }
